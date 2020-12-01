@@ -1,0 +1,69 @@
+﻿{
+    "_id": "5fbd76e831e7a9203abc56ea",
+    "created": {
+        "timestamp": 1606252264318,
+        "createdBy": "tes0101"
+    },
+    "modified": [
+        {
+        "timestamp": 1606252264318,
+        "modifiedBy": "tes0101"
+        }
+    ],
+    "type": "varsel",
+    "variant": "fag",
+    "student": {
+        "username": "gun1234",
+        "name": "Gunnar Dahl",
+        "firstName": "Gunnar",
+        "lastName": "Dahl",
+        "personalIdNumber": "01234567891",
+        "mobile": "",
+        "mail": "gun1234@skole.vtfk.no",
+        "groupId": "KRAVS:TEST1"
+    },
+    "content": {
+        "year": "2020/2021",
+        "period": {
+            "id": 1,
+            "nb": "Halvårsvurdering 1. termin",
+            "nn": "Halvårsvurdering 1. termin",
+            "en": "1st term half-yearly assessment"
+        },
+        "classes": [
+            {
+                "id": "TESVS:TEST/201NOR1208",
+                "nb": "Norsk hovedmål, skriftlig",
+                "nn": "Norsk hovudmål, skriftleg",
+                "en": "Norwegian as 1st lang, written"
+            }
+        ],
+        "reasons": [
+            {
+                "id": 1,
+                "nb": "Du har manglende vurderingsgrunnlag",
+                "nn": "Du har manglande vurderingsgrunnlag",
+                "en": "You have a lack of assessments"
+            }
+        ]
+    },
+    "teacher": {
+        "username": "tes0101",
+        "name": "Testine Testen",
+        "firstName": "Testine",
+        "lastName": "Testen"
+    },
+    "school": {
+        "id": "GRV",
+        "name": "Greveskogen videregående skole",
+        "shortName": "Greveskogen vgs"
+    },
+    "isEncrypted": false,
+    "status": [
+        {
+        "status": "queued",
+        "timestamp": 1606252264318
+        }
+    ],
+    "isQueued": true
+}

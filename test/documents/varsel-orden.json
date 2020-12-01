@@ -1,0 +1,61 @@
+﻿{
+    "_id": "5fbd76e831e7a9203abc56ea",
+    "created": {
+        "timestamp": 1606252264318,
+        "createdBy": "tes0101"
+    },
+    "modified": [
+        {
+        "timestamp": 1606252264318,
+        "modifiedBy": "tes0101"
+        }
+    ],
+    "type": "varsel",
+    "variant": "orden",
+    "student": {
+        "username": "gun1234",
+        "name": "Gunnar Dahl",
+        "firstName": "Gunnar",
+        "lastName": "Dahl",
+        "personalIdNumber": "01234567891",
+        "mobile": "",
+        "mail": "gun1234@skole.vtfk.no",
+        "groupId": "KRAVS:TEST1"
+    },
+    "content": {
+        "year": "2020/2021",
+        "period": {
+            "id": 1,
+            "nb": "Halvårsvurdering 1. termin",
+            "nn": "Halvårsvurdering 1. termin",
+            "en": "1st term half-yearly assessment"
+        },
+        "reasons": [
+            {
+            "id": 1,
+            "nb": "Du har fusket",
+            "nn": "Du har fusket",
+            "en": "You have cheated"
+            }
+        ]
+    },
+    "teacher": {
+        "username": "tes0101",
+        "name": "Testine Testen",
+        "firstName": "Testine",
+        "lastName": "Testen"
+    },
+    "school": {
+        "id": "GRV",
+        "name": "Greveskogen videregående skole",
+        "shortName": "Greveskogen vgs"
+    },
+    "isEncrypted": false,
+    "status": [
+        {
+        "status": "queued",
+        "timestamp": 1606252264318
+        }
+    ],
+    "isQueued": true
+}
