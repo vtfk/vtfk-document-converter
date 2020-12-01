@@ -2,9 +2,17 @@
 
 Converts new document type back into old document type. This allows for a smoother transition from old to new
 
-## Usage
+## Installation
 
-**Maybe something about where to get this package from?**
+```bash
+npm i vtfk-document-converter
+```
+
+## Usage 
+
+Import the module
+Then call it with the document object and the language you want for the old document
+
 
 ```javascript
 const convert = require('vtfk-document-converter');
