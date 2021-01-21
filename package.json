@@ -19,9 +19,8 @@
   "author": "Rune Moskvil Lyngås <rune.moskvil.lyngaas@vtfk.no> (https://github.com/runely)",
   "license": "MIT",
   "dependencies": {
+    "@vtfk/logger": "2.4.1",
     "dotenv": "8.2.0",
-    "vtfk-schools-info": "1.1.2",
-    "winston": "3.3.3",
-    "winston-papertrail": "1.0.5"
+    "vtfk-schools-info": "1.1.2"
   }
 }

@@ -1,5 +1,5 @@
 ﻿const convert = require('./lib/convert-document');
-const logger = require('./lib/logger');
+const { logger } = require('@vtfk/logger')
 
 module.exports = (data, language = 'nb') => {
     logger('info', ['index', data._id, 'start']);
