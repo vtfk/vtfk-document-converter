@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "ava test/test.js",
+    "test": "standard && ava test/test.js",
+    "standard:fix": "standard --fix",
     "refresh": "rm -rf node_modules/ && rm package-lock.json && npm i"
   },
   "repository": {
@@ -24,6 +25,7 @@
     "vtfk-schools-info": "1.1.2"
   },
   "devDependencies": {
-    "ava": "3.15.0"
+    "ava": "3.15.0",
+    "standard": "16.0.3"
   }
 }
