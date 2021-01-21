@@ -1,11 +1,11 @@
-# vtfk-document-converter
+# @vtfk/minelev-document-converter
 
 Converts new document type back into old document type. This allows for a smoother transition from old to new
 
 ## Installation
 
 ```bash
-npm i vtfk-document-converter
+npm i @vtfk/minelev-document-converter
 ```
 
 ## Usage 
@@ -15,7 +15,7 @@ Then call it with the document object and the language you want for the old docu
 
 
 ```javascript
-const convert = require('vtfk-document-converter');
+const convert = require('@vtfk/minelev-document-converter');
 
 const oldDocument = convert(newDocument, 'nb');
 ```
