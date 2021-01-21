@@ -1,3 +1,5 @@
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 # @vtfk/minelev-document-converter
 
 Converts new document type back into old document type. This allows for a smoother transition from old to new

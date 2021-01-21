@@ -1,10 +1,12 @@
-﻿const test = require('ava')
+const test = require('ava')
 const fs = require('fs')
+const { join } = require('path')
 const pkg = require('../package.json')
-const convert = require('../index');
+const convert = require('../index')
+const documentsPath = join(__dirname, 'documents')
 
 test('ava works ok', t => {
-  t.true(true)  
+  t.true(true)
 })
 
 Object.keys(pkg.dependencies || {}).forEach(dependency => {
@@ -21,8 +23,8 @@ Object.keys(pkg.devDependencies || {}).forEach(dependency => {
   })
 })
 
-fs.readdirSync(`${__dirname}/documents`, 'utf-8').forEach(file => {
-  const filePath = `${__dirname}/documents/${file}`
+fs.readdirSync(documentsPath, 'utf-8').forEach(file => {
+  const filePath = join(documentsPath, file)
   const langs = ['nb', 'nn', 'en']
   langs.forEach(lang => {
     test(`'${filePath}' converts correctly to '${lang}'`, t => {
