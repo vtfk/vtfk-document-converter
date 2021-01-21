@@ -1,11 +1,34 @@
-﻿const convert = require('../index');
+﻿const test = require('ava')
+const fs = require('fs')
+const pkg = require('../package.json')
+const convert = require('../index');
 
-const newDocument = require('./documents/varsel-fag.json');
-//const newDocument = require('./documents/varsel-atferd.json');
-//const newDocument = require('./documents/varsel-orden.json');
-//const newDocument = require('./documents/samtale.json');
-//const newDocument = require('./documents/ikke-samtale.json');
-//const newDocument = require('./documents/notat.json');
-//const newDocument = require('./documents/yff....');
+test('ava works ok', t => {
+  t.true(true)  
+})
 
-console.log(convert(newDocument, 'nb'));
+Object.keys(pkg.dependencies || {}).forEach(dependency => {
+  test(`${dependency} loads ok`, t => {
+    const module = require(dependency)
+    t.truthy(module)
+  })
+})
+
+Object.keys(pkg.devDependencies || {}).forEach(dependency => {
+  test(`${dependency} loads ok`, t => {
+    const module = require(dependency)
+    t.truthy(module)
+  })
+})
+
+fs.readdirSync(`${__dirname}/documents`, 'utf-8').forEach(file => {
+  const filePath = `${__dirname}/documents/${file}`
+  const langs = ['nb', 'nn', 'en']
+  langs.forEach(lang => {
+    test(`'${filePath}' converts correctly to '${lang}'`, t => {
+      const newDocument = require(filePath)
+      const oldDocument = convert(newDocument, lang)
+      t.truthy(oldDocument)
+    })
+  })
+})
